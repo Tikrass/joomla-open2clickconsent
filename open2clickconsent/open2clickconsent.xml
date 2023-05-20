@@ -12,6 +12,8 @@
 	<files>
 		<filename plugin="open2clickconsent">open2clickconsent.php</filename>
         <folder>language</folder>
+        <folder>js</folder>
+        <folder>css</folder>
 	</files>
 	<languages folder="language">
 		<language tag="en-GB">en-GB/plg_content_open2clickconsent.ini</language>

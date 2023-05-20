@@ -15,6 +15,8 @@ use Joomla\CMS\Factory;
 class PlgContentOpen2ClickConsent extends CMSPlugin
 {
 
+    protected $tag = 'consent';
+
     public function onContentPrepare($context, &$article, &$params, $page = 0)
     {
 
@@ -23,5 +25,24 @@ class PlgContentOpen2ClickConsent extends CMSPlugin
         $wa  = $doc->getWebAssetManager();
         $pluginPath = 'plugins/content/' . $this->_name;
         $view = JFactory::getApplication()->input->get('view');
+        
+        $wa->registerAndUseScript('open2clickconsent.mainscript',$pluginPath.'/js/dsgvo-video-embed.js'
+        $wa->registerAndUseStyle('contentplugdemo.mainstyle',$pluginPath.'/css/dsgvo-video-embed.css');
+        
+        if(stripos($article->text, '<iframe') === false) {
+            return;
+        }
+
+        preg_match_all('/<iframe.*?\/iframe>/s', $article->text, $matches);
+        
+        foreach ($matches[0] as $value) {
+
+            if preg_match('(youtube|vimeo)', $value) {
+                $output = preg_replace('/src\=/','data-src=">',$value);
+            }
+
+            //replace the original iframe $value with the new $output in article->text
+            $article->text = str_replace($value, $output, $article->text); 
+        }
     }
 }
