@@ -14,8 +14,8 @@
         <folder>language</folder>
 	</files>
 	<languages>
-		<language tag="en-GB">en-GB.plg_content_open2clickconsent.ini</language>
-		<language tag="en-GB">en-GB.plg_content_open2clickconsent.sys.ini</language>
+		<language tag="en-GB">en-GB/plg_content_open2clickconsent.ini</language>
+		<language tag="en-GB">en-GB/plg_content_open2clickconsent.sys.ini</language>
 	</languages>
     <updateservers>
 		<server type="extension" name="Open2ClickConsent Update Site">
