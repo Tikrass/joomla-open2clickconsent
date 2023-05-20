@@ -1,0 +1,22 @@
+<updates>
+	<update>
+		<name>plg_content_open2clickconsent</name>
+		<description>This module reveals an external iframe only after user click. (2-Click Solution) to respect the privacy of the user.</description>
+		<element>plg_content_open2clickconsent</element>
+		<type>plugin</type>
+		<client>site</client>
+		<version>0.0.1</version>
+		<downloads>
+			<downloadurl type="full" format="zip">https://github.com/tikrass/joomla-open2clickconsent/releases/download/0.0.1/open2clickconsent.zip</downloadurl>
+		</downloads>
+		<tags>
+			<tag>stable</tag>
+		</tags>
+		<infourl title="CCC Twoclick on GitHub">
+            https://github.com/Tikrass/joomla-open2clickconsent/blob/main/README.md
+        </infourl>
+		<maintainer>Thibaud Kehler</maintainer>
+		<maintainerurl>https://github.com/Tikrass/joomla-open2clickconsent/blob/main/README.md</maintainerurl>
+		<targetplatform name="joomla" version="4.*"/>
+	</update>
+</updates>
