@@ -13,7 +13,7 @@
 		<filename plugin="open2clickconsent">open2clickconsent.php</filename>
         <folder>language</folder>
 	</files>
-	<languages>
+	<languages folder="language">
 		<language tag="en-GB">en-GB/plg_content_open2clickconsent.ini</language>
 		<language tag="en-GB">en-GB/plg_content_open2clickconsent.sys.ini</language>
 	</languages>
