@@ -38,7 +38,7 @@ class PlgContentOpen2ClickConsent extends CMSPlugin
         foreach ($matches[0] as $value) {
 
             if ( preg_match('(youtube|vimeo)', $value) ) {
-                $output = preg_replace('/src=/','data-src=">',$value);
+                $output = preg_replace('/src=/','data-src=',$value);
             }
 
             //replace the original iframe $value with the new $output in article->text
