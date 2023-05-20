@@ -37,7 +37,7 @@ class PlgContentOpen2ClickConsent extends CMSPlugin
         
         foreach ($matches[0] as $value) {
 
-            if preg_match('(youtube|vimeo)', $value) {
+            if ( preg_match('(youtube|vimeo)', $value) ) {
                 $output = preg_replace('/src\=/','data-src=">',$value);
             }
 
