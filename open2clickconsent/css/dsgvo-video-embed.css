@@ -30,9 +30,9 @@ iframe[data-src] {
 
 .video-wall div {
   position: absolute;
-  width: calc(100% - 2em);
-  top: 3em;
-  bottom: 7em;
+  width: calc(100% - 1em);
+  top: 4em;
+  bottom: 5em;
   overflow-y: auto;
 }
 
@@ -48,7 +48,7 @@ iframe[data-src] {
 .video-wall .video-link {
   display: block;
   white-space: nowrap;
-  font-size: 0.8em;
+  font-size: 0.6em;
   margin: 0;
   position: absolute;
   left: 50%;
@@ -61,7 +61,7 @@ iframe[data-src] {
   appearance: none;
   cursor: pointer;
   color: #eee;
-  font: 700 0.8em/1.2 Helvetica, Arial, sans-serif;
+  font: 700 0.65em/1.1 Helvetica, Arial, sans-serif;
   display: block;
   width: 11.5em;
   height: 4.25em;
