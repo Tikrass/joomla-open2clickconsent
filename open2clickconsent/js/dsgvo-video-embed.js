@@ -24,7 +24,9 @@
 
             video_iframes.push(video_frame);
             video_w = video_frame.getAttribute('width');
+            if (!isNaN(video_w)) video_w = video_w + ' px';
             video_h = video_frame.getAttribute('height');
+            if (!isNaN(video_h)) video_h = video_h + ' px';
             wall = document.createElement('article');
 
             // Prevent iframes from loading remote content
@@ -44,7 +46,7 @@
             wall.setAttribute('class', 'video-wall');
             wall.setAttribute('data-index', i);
             if (video_w && video_h) {
-                wall.setAttribute('style', 'width:' + video_w + 'px;height:' + video_h + 'px');
+                wall.setAttribute('style', 'width:' + video_w + ';height:' + video_h );
             }
             wall.innerHTML = text[video_platform].replace(/\%id\%/g, video_id);
             video_frame.parentNode.replaceChild(wall, video_frame);
