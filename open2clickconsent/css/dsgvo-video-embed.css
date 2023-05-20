@@ -12,8 +12,8 @@ iframe[data-src] {
   font: 400 1em/1.46 Helvetica, Arial, sans-serif;
   color: #333;
   display: inline-block;
-  min-height: 18em;
-  min-width: 28em;
+  /*min-height: 18em;*/
+  /*min-width: 28em;*/
   margin: 0;
   background-color: #eee;
   box-sizing: border-box;
