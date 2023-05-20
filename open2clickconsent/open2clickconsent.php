@@ -26,8 +26,8 @@ class PlgContentOpen2ClickConsent extends CMSPlugin
         $pluginPath = 'plugins/content/' . $this->_name;
         $view = JFactory::getApplication()->input->get('view');
         
-        $wa->registerAndUseScript('open2clickconsent.mainscript',$pluginPath.'/js/dsgvo-video-embed.js'
         $wa->registerAndUseStyle('contentplugdemo.mainstyle',$pluginPath.'/css/dsgvo-video-embed.css');
+        $wa->registerAndUseScript('open2clickconsent.mainscript',$pluginPath.'/js/dsgvo-video-embed.js');
         
         if(stripos($article->text, '<iframe') === false) {
             return;
