@@ -19,7 +19,7 @@
 	</languages>
     <updateservers>
 		<server type="extension" name="Open2ClickConsent Update Site">
-			https://raw.githubusercontent.com/coolcat-creations/mod_ccctwoclick/master/manifest.xml
-		</server>
+                https://raw.githubusercontent.com/Tikrass/joomla-open2clickconsent/main/manifest.xml
+        </server>
 	</updateservers>
 </extension>
